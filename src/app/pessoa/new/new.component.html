@@ -1,0 +1,16 @@
+<form #parentForm="ngForm">
+
+  <po-dynamic-form
+  [p-group-form]="true"
+  [p-fields]="fields"
+  p-auto-focus="nome"
+  ></po-dynamic-form>
+
+  <div class="po-wrapper">
+
+    <po-button class="po-sm-6" [routerLink]="['/pessoa']" p-label="Voltar"></po-button>
+    <po-button class="po-sm-6" p-label="Adicionar"></po-button>
+
+  </div>
+
+</form>
